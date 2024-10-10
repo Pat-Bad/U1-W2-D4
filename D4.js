@@ -50,7 +50,7 @@ crazyDiff(85)
  se n è uguale a 400.
 */
 const boundary = function (n) {
-  if (n > 20 || n <= 100 || n === 400) {
+  if ((n > 20 && n <= 100) || n === 400) {
     return console.log('true')
   }
 }
@@ -58,6 +58,7 @@ const boundary = function (n) {
 boundary(65)
 boundary(2)
 boundary(400)
+boundary(1)
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -97,7 +98,7 @@ check3and7(5)
 const reverseString = function (string2) {
   let stringRev = ''
   for (let i = string2.length - 1; i >= 0; i--) {
-    stringRev += string2[i]
+    stringRev + string2[i]
   }
   console.log(stringRev)
 }
